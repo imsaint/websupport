@@ -174,25 +174,48 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-1',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
+        'name' => __('Testimonials'),
+        'id' => 'swiper-slides',
+        'before_widget' => '<div id="%1$s" class="swiper-slide"> <div class="slide-contayner">',
+        'after_widget' => '</div></div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
 
-    // Define Sidebar Widget Area 2
     register_sidebar(array(
-        'name' => __('Widget Area 2', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-2',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
-    ));
+           'name' => __('Services'),
+           'id' => 'section02',
+           'before_widget' => '<article>',
+           'after_widget' => '<a href="#section08" class="buy-now">Buy now</a></article>',
+           'before_title' => '<h3>',
+           'after_title' => '</h3>'
+       ));
+
+    register_sidebar(array(
+           'name' => __('Optimize'),
+           'id' => 'support',
+           'before_widget' => '<article>',
+           'after_widget' => '</article>'
+       ));
+
+    register_sidebar(array(
+       'name' => __('We’re the best at'),
+       'id' => 'section04',
+       'before_widget' => '<article>',
+       'after_widget' => '</article>',
+       'before_title' => '<h3><i class="fa fa-check" aria-hidden="true"></i>',
+       'after_title' => '</h3>'
+   ));
+
+    register_sidebar(array(
+      'name' => __('Expertise'),
+      'id' => 'section06',
+      'before_widget' => '<article>',
+      'after_widget' => '</article>',
+      'before_title' => '<h3>',
+      'after_title' => '</h3>'
+  ));
+
 }
 
 // Remove wp_head() injected Recent Comment styles
