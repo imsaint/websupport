@@ -1,30 +1,19 @@
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+	    <footer>
+            <div class="wrapper">
+              <a href="<?php echo home_url(); ?>" class="footer-logo"><span>Professional webcare</span></a>
+              <div class="footer-contact">
+                <!--<a href="/"><i class="fa fa-phone" aria-hidden="true"> </i> 8 800 200 600</a>-->
+                <p>12110 Sunset Hills Rd #600, Reston, VA 20190</p>
+              </div>
+              <div class="footer-lnk">
+                <a href="https://www.linkedin.com/company/prowebcare" class="linkedin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <p>&copy; 2015-2016 Professional WebCare</p>
+              </div>
+            </div>
+        </footer>
 
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
-
-			</footer>
-			<!-- /footer -->
-
-		</div>
-		<!-- /wrapper -->
-
-		<?php wp_footer(); ?>
-
-		<!-- analytics -->
-		<script>
-		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
-		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
-		l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
-		ga('send', 'pageview');
-		</script>
+      <script src="<?php echo get_template_directory_uri(); ?>/js/vendor.min.js"></script>
+      <script src="<?php echo get_template_directory_uri(); ?>/js/main.min.js"></script>
 
 	</body>
 </html>
